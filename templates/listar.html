@@ -17,15 +17,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for musica in musicas %}
                     <tr>
-                        <td>la Guitarra</td>
+                        <td>{{ musica }}</td>
                     </tr>
-                    <tr>
-                        <td>Para no verte más</td>
-                    </tr>
-                    <tr>
-                        <td>Balada para un gordo</td>
-                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
