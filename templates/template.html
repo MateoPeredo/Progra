@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'bootstrap.css') }}">
     <title>Discoteca</title>
   </head>
   <body>
@@ -11,9 +11,9 @@
         <div class="page-header">
             <h1>{{ titulo }}</h1>
         </div>
-        
+
         {% block contenido %}
-        
+
         {% endblock %}
 
     </div>
